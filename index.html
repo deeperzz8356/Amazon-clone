@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=va, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar" ">
+        <div class=" logo"><a href="amazon.html" class="header-link"><img
+                src="c:\Users\Prasad  Pandey\code\amazon\html\image\Amazon-Logo-White-PNG-Image.png"
+                alt="logo"><span>.in</span></a></div>
+        <div class="Location"><img class="lo" src="c:\Users\Prasad  Pandey\code\amazon\html\image\location.svg" alt="loc">
+            <div class="txt"><span class="text1">Delivering at mumbai-400072</span> <span class="navtext text2">Update
+                    location</span></div>
+        </div>
+        <div class="search">
+            <!-- Example split danger button -->
+            <!-- Example single danger button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-gray dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Action
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="order.html">Returns &orders</a>
+                    <a class="dropdown-item" href="tracking.html">Track your Orders</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </div><input type="text" placeholder="Search Amazon.in" class="srch"><button class="btn btn3"><img
+                    class="srlogo" src="c:\Users\Prasad  Pandey\code\amazon\html\image\loc.svg" alt=""></button>
+        </div>
+        <!-- Sign In Section -->
+        <div class="signin" id="signinDropdown">
+            <span class="signin-text">Hello, sign in</span>
+            <span class="signin-main">Account & Lists</span>
+
+            <div class="signin-dropdown" id="signinMenu">
+                <button class="signin-btn" onclick="signIn()">Sign In</button>
+                <div style="text-align: center; font-size: 13px; margin: 10px 0;">
+                    New customer? <a href="#" class="create-account">Start here.</a>
+                </div>
+                <hr>
+                <div style="font-weight: bold; margin-bottom: 10px;">Your Lists</div>
+                <div><a href="#" style="color: #333; text-decoration: none; display: block; padding: 2px 0;">Create a
+                        List</a></div>
+                <div><a href="#" style="color: #333; text-decoration: none; display: block; padding: 2px 0;">Find a List
+                        or Registry</a></div>
+                <hr>
+                <div style="font-weight: bold; margin-bottom: 10px;">Your Account</div>
+                <div><a href="#" style="color: #333; text-decoration: none; display: block; padding: 2px 0;">Your
+                        Account</a></div>
+                <div><a href="#" style="color: #333; text-decoration: none; display: block; padding: 2px 0;">Your
+                        Orders</a></div>
+                <div><a href="#" style="color: #333; text-decoration: none; display: block; padding: 2px 0;">Your Wish
+                        List</a></div>
+                <div><a href="#" style="color: #333; text-decoration: none; display: block; padding: 2px 0;">Your
+                        Recommendations</a></div>
+            </div>
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart" id="cartDropdown">
+            <a class="orders-link header-link" href="checkout.html">
+
+            <div class="cart-icon">
+                
+                    <svg width="32" height="24" viewBox="0 0 32 24" fill="white">
+                        <path
+                            d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+            </div>
+            <span class="cart-text">Cart</span></a>
+
+            <div class="cart-dropdown" id="cartMenu">
+                <div class="cart-header">Shopping Cart</div>
+                <div class="cart-empty" id="cartEmpty">
+                    Your cart is empty
+                </div>
+                <div id="cartItems" style="display: none;">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <div class="cart-footer" id="cartFooter" style="display: none;">
+                    <button class="go-to-cart-btn" onclick="goToCart()">Go to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <nav>
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Fresh</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mxplayer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">Sell</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">Fashion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">Customer Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">New Releases</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">Home&kitchen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">Electronics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">Amazon pay</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">Computers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">Car&Motorbike</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="c:\Users\Prasad  Pandey\code\amazon\html\image\img1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c:\Users\Prasad  Pandey\code\amazon\html\image\img2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c:\Users\Prasad  Pandey\code\amazon\html\image\img3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4 cad">
+                <div class="col">
+                    <div class="card" style="margin-left: 46px;">
+                        <img src="c:\Users\Prasad  Pandey\code\amazon\html\image\lamp.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lighting & Decorations</h5>
+                            <p class="card-text">Revamp your home in style | Up to 55% off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="C:\Users\Prasad  Pandey\code\amazon\html\image\shower.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bathroom utensils</h5>
+                            <p class="card-text">Under ₹499 | Deals on home improvement essentials</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="c:\Users\Prasad  Pandey\code\amazon\html\image\ac.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Air Conditioners</h5>
+                            <p class="card-text">Appliances for your home | Up to 55% off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="margin-right: 46px;">
+                        <img src="C:\Users\Prasad  Pandey\code\amazon\html\image\ps5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Games</h5>
+                            <p class="card-text">PlayStation 5 Slim & Accessories | No Cost EMI*</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('.carousel-item');
+            let current = 0;
+
+            function showItem(index) {
+                items.forEach((item, i) => {
+                    item.classList.remove('active');
+                    if (i === index) item.classList.add('active');
+                });
+            }
+
+            function nextItem() {
+                current = (current + 1) % items.length;
+                showItem(current);
+            }
+
+            setInterval(nextItem, 3000); // Change image every 3 seconds
+        });
+    </script>
+    <script src="scripts/amazon.js"></script>
+</body>
+
+</html>
